@@ -1,0 +1,24 @@
+def fab(x:Array[Int],y:Int):Array[Int]= {
+  if (x.length == y) x
+  else {
+    if (x.length == 0) {
+      val z = x :+ 1
+      fab(z, y)
+
+    }
+
+
+    else if (x.length == 1) {
+      val z = x :+ 1
+      fab(z, y)
+    }
+    else {
+      val z = x :+ (x(x.length - 1) + x(x.length - 2))
+      fab(z, y)
+    }
+  }
+}
+
+def fab1(limit:Int)=fab(Array(0),limit)
+
+

@@ -1,0 +1,25 @@
+def sum(f:(Int,Int)=>Int,first:Int,second:Int):Int={
+
+
+     f(first,second)
+
+}
+
+def square(x:Int,y:Int):Int=
+{
+
+  (x * x) + (y * y)
+}
+
+def int(x:Int,y:Int):Int=
+{
+  x + y
+}
+
+def cube(x:Int,y:Int):Int=
+{
+
+  (x * x * x) + (y * y * y)
+}
+
+sum(square,10,3)
