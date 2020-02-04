@@ -1,16 +1,16 @@
-def fabinocci(x:Array[Int],y:Int):Array[Int]= {
+def fabinocci(arr_ay:Array[Int],y:Int):Array[Int]= {
 
-  val m=x.length
-  println(m)
- 
-   if(y==x.length) x 
+  val length1=arr_ay.length
+  println(length1 )
+
+   if(y==arr_ay.length) arr_ay
    else {
       //println("inside")
-     fabinocci(x:+ x(x.length-2) + x(x.length-1),y)
+     fabinocci(arr_ay:+ arr_ay(arr_ay.length-2) + arr_ay(arr_ay.length-1),y)
    }
  }
 
 
 val limit=8
-val k=fabinocci(Array(0,1),limit)
-for(i<-k) println(i)
+val output_array=fabinocci(Array(0,1),limit)
+for(i<-output_array) println(i)
